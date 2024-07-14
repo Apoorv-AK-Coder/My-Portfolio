@@ -1,17 +1,21 @@
 {
   "name": "react-essentials-start",
   "version": "0.0.0",
-  "homepage": "https://apoorv-ak-coder.github.io/Portfolio",
+  "homepage": "https://apoorv-ak-coder.github.io/My-Portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "react-scripts build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
@@ -24,7 +28,19 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "Portfolio"
+    "url": "My-Portfolio"
   },
-  "description": ""
+  "description": "",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
