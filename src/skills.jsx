@@ -1,5 +1,6 @@
 import './style.css';
 import skills from './asset/skills.png';
+import React from 'react';
 import { SkillData } from './data.js';
 
 function Skilldata({ image, title, description }) {

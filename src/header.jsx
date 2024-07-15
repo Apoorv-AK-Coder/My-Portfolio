@@ -1,6 +1,7 @@
 import './style.css';
 import logo from './asset/logo.png';
 import { useState } from 'react';
+import React from 'react';
 
 export default function Header() {
     const [navClick, setNavClick] = useState('home');
@@ -16,17 +17,25 @@ export default function Header() {
 
     const [mobileNav, setMobileNav] = useState(null);
     let class7, class8;
-    if(mobileNav === 'navShow'){class8 = 'display: block !important;';} else if(mobileNav ==='navHide'){class8 = 'display: none !important;';}
+    class7 = 'column navigate';
+    class8 = 'column nav';
+    if(mobileNav === 'navShow'){
+        class8 = 'column nav navshow';
+        class7 = 'column navigate navhide';
+    } else if(mobileNav ==='navHide'){
+        class8 = 'column nav';
+        class7 = 'column navigate';
+    }
 
     return (
         <header className='flex'>
             <div className="column">
                 <a href='./index'><img src={logo} alt='logo' /></a>
             </div>
-            <div className="column navigate" id={class7}>
+            <div className={class7}>
                 <i onClick={() => setMobileNav('navShow')} className="fa-solid fa-grip-lines"></i>
             </div>
-            <div className="column nav" id={class8}>
+            <div className={class8}>
                 <i onClick={() => setMobileNav('navHide')} className="fa-solid fa-xmark"></i>
                 <ul className='d-flex'>
                     <li onClick={() => setNavClick('home')} className={class1}><a href='#home'>Home</a></li>

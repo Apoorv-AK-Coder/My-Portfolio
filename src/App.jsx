@@ -4,8 +4,10 @@ import Skills from './skills.jsx';
 import Header from './header.jsx';
 import Education from './edu.jsx';
 import Experience from './experience.jsx';
+import Contact from './contact.jsx';
+import React from 'react';
 
-function App() {
+export default function App() {
   
 
   return (
@@ -15,8 +17,7 @@ function App() {
       <Skills />
       <Education />
       <Experience />
+      <Contact />
     </div>
   );
 }
-
-export default App;

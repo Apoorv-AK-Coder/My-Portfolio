@@ -355,49 +355,16 @@ section {
      }
 }
 
-/*Header starts here*/
-
-.head {
-    width: 1280px;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
+.contact {
+    .details {
+        display: flex;
+        gap: 30px;
+    }
+    :is(img) {
+        width: 50px;
+        margin-top: 15px;
+    }
 }
-
-.head :is(img) {
-    height: 60px;
-    margin: 0;
-    padding: 0;
-}
-
-/*Header ends here*/
-
-/*Footer Starts Here*/
-
-.bottom {
-    width: 1280px;
-    margin: auto;
-    padding: 10px 0;
-    text-align: center;
-    color: var(--fourth-color);
-}
-
-/*Footer Ends Here*/
-
-/*whatsapp start here*/
-
-.whatsapp {
-    font-size: 35px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #25D366;
-    border-radius: 100%;
-    padding: 7px 12px;
-}
-
-/*whatsapp ends here*/
-
 
 @media only screen and (max-width: 1024px) {
     .d-flex {
@@ -413,9 +380,18 @@ section {
     header {
         .navigate {
             display: block !important;
+            text-align: right;
         }
 
         .btn {
+            display: none;
+        }
+        
+        .navshow {
+            display: block !important;
+        }
+
+        .navhide {
             display: none;
         }
 

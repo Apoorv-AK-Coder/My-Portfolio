@@ -6,22 +6,7 @@ import JavaScript from './asset/JavaScript.png';
 import reactJS from './asset/React-JS.png';
 import TailwindCSS from './asset/TailwindCSS.png';
 import sass from './asset/scss.png';
-
-/*
-import contact from './asset/contact.png';
-import education from './asset/education.png';
-import Elementor from './asset/Elementor.png';
-import email from './asset/email.png';
-import experience from './asset/experience.png';
-import GitHub from './asset/Git-hub.png';
-import home from './asset/home.png';
-import instagram from './asset/instagram.png';
-import linkedin from './asset/linkedin.png';
-import location from './asset/location.png';
-import project from './asset/projects.png';
-import whatsapp from './asset/whatsapp.png';
-import WordPress from './asset/WordPress.png';
-*/
+import React from 'react';
 
 export const SkillData = [
     {
@@ -57,7 +42,6 @@ export const SkillData = [
         title:'SASS',
     }
 ];
-
 
 export const Example = {
     Button1:

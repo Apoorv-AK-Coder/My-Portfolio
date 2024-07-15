@@ -1,6 +1,7 @@
 import './style.css';
 import { Example } from './data.js';
 import { useState } from 'react';
+import React from 'react';
 
 export default function Education() {
     function TabButton({ label, onClick, isSelected }) {
