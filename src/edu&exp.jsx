@@ -22,7 +22,6 @@ export default function EducationExperience() {
                     <menu>
                         <TabButton isSelected={selectedTopic === 'Button1'} label="Post Graduation" onClick={() => handleClick('Button1')} />
                         <TabButton isSelected={selectedTopic === 'Button2'} label="Graduation" onClick={() => handleClick('Button2')} />
-                        <TabButton isSelected={selectedTopic === 'Button3'} label="Experience" onClick={() => handleClick('Button3')} />
                     </menu>
                     <div className="tabContent">
                         <h3>{Example[selectedTopic].title}</h3>
