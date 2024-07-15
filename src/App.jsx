@@ -2,7 +2,8 @@ import './style.css';
 import Hero from './hero.jsx';
 import Skills from './skills.jsx';
 import Header from './header.jsx';
-import EducationExperience from './edu&exp.jsx';
+import Education from './edu.jsx';
+import Experience from './experience.jsx';
 
 function App() {
   
@@ -12,7 +13,8 @@ function App() {
       <Header />
       <Hero />
       <Skills />
-      <EducationExperience />
+      <Education />
+      <Experience />
     </div>
   );
 }

@@ -44,6 +44,7 @@ rgb(16, 27, 48)*/
 .flex {
     display: flex;
 }
+
 :is(p) {
     font-family: var(--secondary-font);
     line-height: 2;
@@ -98,8 +99,8 @@ h4 {
 
 :is(h4) {
     font-size: 20px;
-    font-weight: 600;
-    color: var(--secondary-color);
+    font-weight: 400;
+    color: var(--third-color);
 }
 
 :is(button) {
@@ -199,6 +200,7 @@ h4 {
     gap: 0.7rem;
     text-align: left;
     display: flex;
+
     :is(div) {
         width: 17rem;
         background-color: var(--secondary-color);
@@ -291,26 +293,38 @@ header {
 
 section {
     background-color: var(--secondary-color);
+
     :is(menu) {
         text-align: center;
         display: flex;
         border-radius: 10px;
         margin-top: 30px;
         gap: 10px;
+
         :is(div) {
             background-color: #313131;
             padding: 10px 20px;
             border-radius: 10px 10px 0 0;
             cursor: pointer;
         }
-        div:hiver {background-color: var(--primary-color);}
+
+        div:hiver {
+            background-color: var(--primary-color);
+        }
     }
+
     .tabContent {
         background-color: var(--third-color);
         padding: 30px;
         border-radius: 0 10px 10px 10px;
-        :is(h3) {color:  var(--secondary-color);}
-        :is(p) {color:  var(--secondary-color);}
+
+        :is(h3) {
+            color: var(--secondary-color);
+        }
+
+        :is(p) {
+            color: var(--secondary-color);
+        }
     }
 
     .active {
@@ -318,7 +332,28 @@ section {
     }
 }
 
-:is(a) {color: var(--third-color);}
+:is(a) {
+    color: var(--third-color);
+}
+
+.experience {
+    /* background-color: red; */
+    .worksection {
+        border-left: 2px dashed var(--third-color);
+        padding: 15px 15px 15px 0;
+        margin-left: 7px;
+        :is(ul) {
+            margin: 15px 0 0 15px;
+            list-style: disc;
+            color: var(--third-color);
+        }
+    }
+     :is(i) {
+        color: var(--third-color);
+        font-size: 25px;
+        margin: 6px 10px 0 5px;
+     }
+}
 
 /*Header starts here*/
 
@@ -369,7 +404,8 @@ section {
         flex-direction: column;
     }
 
-    .row, header {
+    .row,
+    header {
         padding: 25px;
         width: 100% !important;
     }
@@ -378,8 +414,13 @@ section {
         .navigate {
             display: block !important;
         }
-        .btn {display: none;}
-        .nav {display: none;
+
+        .btn {
+            display: none;
+        }
+
+        .nav {
+            display: none;
             position: absolute;
             background-color: var(--secondary-color);
             margin: 0;
@@ -404,6 +445,7 @@ section {
             width: 80%;
             text-align: center !important;
             margin-top: 30px;
+
             :is(img) {
                 width: 100%;
             }
@@ -413,6 +455,7 @@ section {
     .skillsec {
         gap: 0;
         flex-direction: column;
+
         :is(div) {
             margin: auto;
             width: 18rem;
@@ -420,8 +463,19 @@ section {
         }
     }
 
-    h1 {font-size: 50px;}
-    h2 {font-size: 35px;}
-    :is(h3) {font-size: 24px;}
-    .para {font-size: 22px;}
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    :is(h3) {
+        font-size: 24px;
+    }
+
+    .para {
+        font-size: 22px;
+    }
 }
