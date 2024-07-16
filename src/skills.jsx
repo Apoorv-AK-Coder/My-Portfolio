@@ -1,9 +1,8 @@
 import './style.css';
-import skills from './asset/skills.png';
 import React from 'react';
 import { SkillData } from './data.js';
 
-function Skilldata({ image, title, description }) {
+function Skilldata({ image, title }) {
     return (
         <div className='skill'>
             <img src={image} alt={title} />
@@ -17,8 +16,7 @@ export default function Skills() {
     return (
         <div className="skills" id='skills'>
             <div className="row">
-                <div className="column gap d-flex">
-                    <img src={skills} />
+                <div className="column">
                     <div><h2>Skills & Technologies</h2>
                         <p>Driving Frontend Development Excellence with Advanced Skills and Technologies.Delivering Engaging Interfaces and High-Performance Web Solutions for the Modern Digital Landscape.</p>
                     </div>

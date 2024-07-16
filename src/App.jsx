@@ -5,6 +5,7 @@ import Header from './header.jsx';
 import Education from './edu.jsx';
 import Experience from './experience.jsx';
 import Contact from './contact.jsx';
+import WorkData from './work.jsx';
 import React from 'react';
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Skills />
       <Education />
       <Experience />
+      <WorkData />
       <Contact />
     </div>
   );

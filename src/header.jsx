@@ -42,8 +42,8 @@ export default function Header() {
                     <li onClick={() => setNavClick('skills')} className={class2}><a href='#skills'>Skills</a></li>
                     <li onClick={() => setNavClick('education')} className={class3}><a href='#education'>Education</a></li>
                     <li onClick={() => setNavClick('experience')} className={class4}><a href='#experience'>Experience</a></li>
-                    <li onClick={() => setNavClick('work')} className={class5}><a href='./index'>Work</a></li>
-                    <li onClick={() => setNavClick('contact')} className={class6}><a href='./index'>Contact</a></li>
+                    <li onClick={() => setNavClick('work')} className={class5}><a href='#work'>Work</a></li>
+                    <li onClick={() => setNavClick('contact')} className={class6}><a href='#contact'>Contact</a></li>
                 </ul>
             </div>
             <div className="column btn">
