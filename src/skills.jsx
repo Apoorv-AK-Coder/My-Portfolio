@@ -4,7 +4,7 @@ import { SkillData } from './data.js';
 
 function Skilldata({ image, title }) {
     return (
-        <div className='skill'>
+        <div id='skillsection'>
             <img src={image} alt={title} />
             <h3>{title}</h3>
         </div>
@@ -23,16 +23,12 @@ export default function Skills() {
                 </div>
 
                 <div className="column skillsec">
+                    {SkillData.map((contentItem) => <Skilldata {...contentItem} />)}
+                    {/* <><Skilldata {...SkillData} /></>
                     <><Skilldata {...SkillData[0]} /></>
                     <><Skilldata {...SkillData[1]} /></>
                     <><Skilldata {...SkillData[2]} /></>
-                    <><Skilldata {...SkillData[3]} /></>
-                </div>
-                <div className="column skillsec">
-                    <><Skilldata {...SkillData[4]} /></>
-                    <><Skilldata {...SkillData[5]} /></>
-                    <><Skilldata {...SkillData[6]} /></>
-                    <><Skilldata {...SkillData[7]} /></>
+                    <><Skilldata {...SkillData[3]} /></> */}
                 </div>
 
             </div>

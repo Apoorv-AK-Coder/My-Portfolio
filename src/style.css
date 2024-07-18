@@ -189,18 +189,16 @@ h4 {
 }
 
 .skillsec {
-    gap: 0.7rem;
-    text-align: left;
-    display: flex;
+    margin-top: 25px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto;
 
     :is(div) {
-        width: 17rem;
         background-color: var(--secondary-color);
         border-radius: 10px;
         padding: 20px;
         display: flex;
-        gap: 10px;
-        margin-top: 25px;
 
         :is(img) {
             width: 50px;
@@ -211,6 +209,10 @@ h4 {
             margin: auto;
         }
     }
+}
+
+.skill {
+    margin-top: 20px;
 }
 
 header {
@@ -410,13 +412,14 @@ section {
         flex-direction: column;
     }
 
-    .row,
-    header {
-        padding: 25px;
+    .row {
+        padding: 25px 35px;
         width: 100% !important;
     }
 
     header {
+        width: 100% !important;
+        padding: 20px 40px;
         .navigate {
             display: block !important;
             text-align: right;
@@ -456,8 +459,7 @@ section {
     .heroBG {
         .right {
             width: 80%;
-            text-align: center !important;
-            margin-top: 30px;
+            margin: 40px 0 0 40px;
 
             :is(img) {
                 width: 100%;
@@ -466,14 +468,21 @@ section {
     }
 
     .skillsec {
-        gap: 0;
-        flex-direction: column;
+        gap: 10px 10px;
+        grid-template-columns: auto auto;
 
         :is(div) {
-            margin: auto;
-            width: 18rem;
-            margin-top: 15px !important;
+            padding: 15px;
+
+            :is(img) {
+                width: 40px;
+                height: 40px;
+            }
         }
+    }
+
+    .gap {
+        gap: 0;
     }
 
     h1 {
@@ -485,10 +494,14 @@ section {
     }
 
     :is(h3) {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .para {
         font-size: 22px;
+    }
+
+    .info {
+        padding: 20px 0 0 0 !important;
     }
 }
