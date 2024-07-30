@@ -6,9 +6,18 @@ import Education from './edu.jsx';
 import Experience from './experience.jsx';
 import Contact from './contact.jsx';
 import WorkData from './work.jsx';
-import React from 'react';
+import ReactGA from 'react-ga4';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function App() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
+  
   return (
     <div className="container">
       <Header />
