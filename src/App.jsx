@@ -9,8 +9,6 @@ import WorkData from './work.jsx';
 import React from 'react';
 
 export default function App() {
-  
-
   return (
     <div className="container">
       <Header />

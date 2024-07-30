@@ -1,7 +1,6 @@
 import './style.css';
 import logo from './asset/logo.png';
-import { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Header() {
     const [navClick, setNavClick] = useState('home');
