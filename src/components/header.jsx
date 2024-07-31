@@ -13,7 +13,7 @@ export default function Header() {
     }
 
     return (
-        <div className="container header">
+        <div className="contain header">
             <div className={style1}>
                 <p><i onClick={() => setMobileNav('navHide')} className="fa-solid fa-xmark"></i></p>
                 <nav>

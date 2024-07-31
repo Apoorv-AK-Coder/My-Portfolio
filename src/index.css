@@ -16,6 +16,10 @@ body {
     background-color: black;
 }
 
+.container {
+    background-color: var(--secondary-color);
+}
+
 /*rgb(135, 80, 247)
 rgb(16, 27, 48)*/
 
@@ -38,6 +42,7 @@ rgb(16, 27, 48)*/
 
 .column {
     flex: auto;
+    margin: auto;
 }
 
 .d-flex {
@@ -48,7 +53,8 @@ rgb(16, 27, 48)*/
     display: flex;
 }
 
-p, li {
+p,
+li {
     font-family: var(--secondary-font);
     line-height: 2;
     font-size: 16px;
@@ -112,28 +118,34 @@ h4 {
     gap: 20px;
 }
 
-.heroBG {
-    background-image: linear-gradient(45deg, rgba(16, 27, 48, 0.9), rgba(0, 0, 0, 0.7)), url(./asset/heroBG.jpg);
+.bg1 {
+    background-image: linear-gradient(45deg, rgba(16, 27, 48, 0.9), rgba(0, 0, 0, 0.7)), url(./asset/bg1.mp4);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero {
-    width: 100%;
+    /* width: 100%; */
+
     video {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        /* height: 50vh; */
-        height: auto;
-        position: absolute;
-        /* background-size: cover; */
+        height: 100%;
+        object-fit: cover;
         z-index: -1;
+    }
+
+    .row {
+        height: 100vh;
         margin: auto;
     }
-    
-    .row {
-        height: 100%;
-        background: red;
+
+    .container {
+        background-color: transparent !important;
+
     }
 
     .column {
@@ -151,45 +163,55 @@ h4 {
     position: fixed;
     right: 0;
     left: 0;
+    z-index: 1;
+
+
     .head {
         width: 1220px;
         margin: auto;
         padding: 20px 0;
-    
+
         .show {
             width: 50px;
             height: 45px;
             border: 2px solid var(--third-color);
             padding: 10px 15px;
+
             i {
                 font-size: 20px;
                 color: white;
                 margin: auto;
             }
+
             .center {
                 margin: 5px 0;
             }
         }
     }
+
     .hide {
         position: absolute;
-        width: 40%;
+        width: 35%;
         height: 100vh;
-        z-index: 1;
         background-color: rgba(16, 27, 48);
         padding: 50px;
         top: 0;
         left: 0;
-        
-        p{
+
+        p {
             font-size: 30px;
         }
+
         li {
             text-align: center;
             list-style-type: none;
             padding: 10px 0;
             margin: 10px 0;
-            a{color: var(--third-color); text-decoration: none;}
+
+            a {
+                color: var(--third-color);
+                text-decoration: none;
+            }
 
             a:hover {
                 text-decoration: underline wavy;
@@ -215,7 +237,9 @@ h4 {
         }
     }
 
-    i{cursor: pointer;}
+    i {
+        cursor: pointer;
+    }
 
     .icon {
         width: 1190px;
@@ -234,7 +258,48 @@ h4 {
     }
 }
 
-.navhide {display: none;}
+.navhide {
+    display: none;
+}
+
+.about {
+    img {
+        width: 400px;
+        border: 2px solid var(--primary-color);
+        border-radius: 100%;
+        padding-top: 20px;
+    }
+}
+
+.usps {
+    background-color: var(--primary-color);
+    .row {
+        gap: 10px;
+    }
+    .column {
+        margin: 0;
+        flex: 1;
+        background-color: rgba(242, 242, 242,1);
+        text-align: center;
+        border-radius: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+        padding-bottom: 40px;
+    }
+    
+    .details {
+        border-radius: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+        background-image: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+        padding: 15px 15px 50px 15px;
+    }
+
+    img {
+        margin-top: 10px;
+        width: 80px;
+    }
+
+    p {font-size: 14px;}
+}
 
 @media only screen and (max-width: 1024px) {
     .d-flex {
@@ -242,14 +307,18 @@ h4 {
     }
 
     .row {
-        padding: 25px 35px;
+        padding: 20px;
+        width: 100% !important;
+    }
+
+    .container {
         width: 100% !important;
     }
 
     .gap {
         gap: 0;
     }
-    
+
     .head {
         width: 100% !important;
         padding: 20px !important;
@@ -257,12 +326,44 @@ h4 {
 
     .hero {
         .row {
-            height: 100vh;
-            margin: auto;
+            height: 100vh !important;
+            margin: auto !important;
+            padding-top: 28vh !important;
         }
 
         .column {
-            margin: auto;
+            margin: auto !important;
+
+            p {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 53px;
+    }
+
+    .header {
+        .hide {
+            width: 60% !important;
+        }
+    }
+
+    .about {
+        img {
+            width: 75% !important;
+        }
+    }
+
+    .usps {
+        p {
+            font-size: 16px;
         }
     }
 }

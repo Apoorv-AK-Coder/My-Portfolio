@@ -8,6 +8,11 @@ import TailwindCSS from './asset/TailwindCSS.png';
 import sass from './asset/scss.png';
 import React from 'react';
 
+import image1 from './asset/1.png';
+import image2 from './asset/2.png';
+import image3 from './asset/3.png';
+import image4 from './asset/4.png';
+
 export const SkillData = [
     {
         image:HTML,
@@ -66,3 +71,34 @@ export const Example = {
         li3: 'Utilized industry-standard design using the basic skills like HTML & CSS with JS & React js'
     }
 }
+
+export const USPdata = [
+    {
+        image: image1,
+        num: '1',
+    title: 'Level-headed',
+    description: 'Maintain a calm and rational approach to problem-solving, ensuring effective design solutions.'
+},
+
+{
+    image: image2,
+    num: '2',
+    title: 'Persistent',
+    description: 'Dedicated to achieving exceptional design outcomes through rigorous iteration and refinement.'
+},
+
+{
+    image: image3,
+    num: '3',
+    title: 'Amicable',
+    description: 'Build strong client relationships through open communication and collaboration.'
+},
+
+{
+    image: image4,
+    num: '4',
+    title: 'Adaptable',
+    description: 'Flexible and responsive to changing project requirements and client feedback.'
+}
+
+];

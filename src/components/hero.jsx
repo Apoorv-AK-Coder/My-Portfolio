@@ -1,9 +1,11 @@
 import '../index.css';
 import bg1 from '../asset/bg1.mp4';
+import React from 'react';
 
 export default function Hero() {
     return (
-        <div className="container hero">
+        <div className="contain hero">
+            <video src={bg1} autoPlay loop muted />
             <video src={bg1} autoPlay loop muted />
             <div className='row d-flex'>
                 <div className='column left'>
