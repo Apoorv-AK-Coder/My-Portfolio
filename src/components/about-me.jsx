@@ -4,7 +4,7 @@ import image from '../asset/selfi.png';
 
 export default function AboutMe() {
     return (
-        <div className="container about">
+        <div className="container about" id='about'>
             <div className="row d-flex gap">
                 <div className="column">
                     <img src={image} className='w3-animate-bottom' />

@@ -126,8 +126,6 @@ h4 {
 }
 
 .hero {
-    /* width: 100%; */
-
     video {
         position: fixed;
         top: 0;
@@ -279,7 +277,7 @@ h4 {
     .column {
         margin: 0;
         flex: 1;
-        background-color: rgba(242, 242, 242,1);
+        background-color: var(--third-color);
         text-align: center;
         border-radius: 10px;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
@@ -299,6 +297,65 @@ h4 {
     }
 
     p {font-size: 14px;}
+}
+
+.skills {
+    .column {
+        text-align: center;
+        p {
+            width: 60%;
+            margin: auto;
+        }
+    }
+    .skillsec {
+        margin-top: 25px;
+        display: grid;
+        gap: 20px 20px;
+        grid-template-columns: auto auto auto auto;
+    
+        :is(div) {
+            img {
+                width: 75px;
+                background-color: var(--third-color);
+                padding: 10px;
+                border-radius: 100%;
+            }
+    
+            h3 {
+                margin: auto 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+                font-size: 25px;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+.education {
+    background-color: var(--primary-color);
+    text-align: center;
+    .edu {
+        padding: 1px;
+        margin-top: 20px;
+        background-color: var(--third-color);
+        border-radius: 10px;
+        
+        .titel {
+            padding: 20px;
+            h3, p {
+                margin: 0;
+                color: var(--secondary-color);
+            }
+        }
+
+        .details {
+            padding: 20px;
+            background-image: linear-gradient(to top, var(--secondary-color), var(--primary-color)) ;
+            border-radius: 0 0 10px 10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -351,7 +408,8 @@ h4 {
 
     .header {
         .hide {
-            width: 60% !important;
+            width: 70% !important;
+            padding: 25px;
         }
     }
 
@@ -364,6 +422,14 @@ h4 {
     .usps {
         p {
             font-size: 16px;
+        }
+    }
+    .skills {
+        p {
+            width: 100% !important;
+        }
+        .skillsec {
+            grid-template-columns: auto;
         }
     }
 }

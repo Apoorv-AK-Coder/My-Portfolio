@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Hero() {
     return (
-        <div className="contain hero">
+        <div className="contain hero" id='home'>
             <video src={bg1} autoPlay loop muted />
             <video src={bg1} autoPlay loop muted />
             <div className='row d-flex'>

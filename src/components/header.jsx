@@ -19,9 +19,11 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li><a href='#'>Home</a></li>
-                        <li><a href='#'>Skills</a></li>
-                        <li><a href='#'>Education</a></li>
-                        <li><a href='#'>Experience</a></li>
+                        <li><a href='#about'>About Me</a></li>
+                        <li><a href='#usp'>USP</a></li>
+                        <li><a href='#skills'>Skills</a></li>
+                        <li><a href='#education'>Education</a></li>
+                        <li><a href='#experience'>Experience</a></li>
                         <li><a href='#'>Work</a></li>
                         <li><a href='#'>Contact</a></li>
                         <li>

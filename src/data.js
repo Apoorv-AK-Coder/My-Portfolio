@@ -72,6 +72,23 @@ export const Example = {
     }
 }
 
+export const Study = [
+    {
+        title: 'MBA (IT)',
+        description: 'I completed my MBA from Kunwar Satya Veera College of Engineering & Management, Bijnor between 2020 and 2022. This program equipped me with advanced knowledge and skills in business management, strategic planning, and leadership, preparing me to excel in a competitive corporate environment. I have a master\'s degree approved by AICTE & affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow.',
+        year: '2020 - 2022',
+        college: 'Kunwar Satya Veera College of Engineering & Management, Bijnor',
+        university: 'Dr. APJ Abdul Kalam Technical University, Lucknow'
+    },
+    {
+        title: 'B.Tech. (CSE)',
+        description: 'I earned my B.Tech degree in Computer Science and Engineering from Kunwar Satya Veera College of Engineering & Management, Bijnor during the period of 2016 to 2020. This technical education provided me with a strong foundation in [specific skills or knowledge relevant to your field], enhancing my problem-solving abilities and analytical skills. I have a degree approved by AICTE & affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow.',
+        year: '2016 - 2020',
+        college: 'Kunwar Satya Veera College of Engineering & Management, Bijnor',
+        university: 'Dr. APJ Abdul Kalam Technical University, Lucknow'
+    }
+];
+
 export const USPdata = [
     {
         image: image1,
