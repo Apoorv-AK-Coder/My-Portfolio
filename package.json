@@ -34,7 +34,7 @@
     "type": "git",
     "url": "My-Portfolio"
   },
-  "description": "",
+  "description": "My-Portfolio",
   "browserslist": {
     "production": [
       ">0.2%",
