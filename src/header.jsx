@@ -37,7 +37,7 @@ export default function Header() {
             <div className={class8}>
                 <i onClick={() => setMobileNav('navHide')} className="fa-solid fa-xmark"></i>
                 <ul className='d-flex'>
-                    <li onClick={() => setNavClick('home')} className={class1}><a href='#home'>Home</a></li>
+                    <li onClick={() => setNavClick('home')} className={class1}><a href='./home.html'>Home</a></li>
                     <li onClick={() => setNavClick('skills')} className={class2}><a href='#skills'>Skills</a></li>
                     <li onClick={() => setNavClick('education')} className={class3}><a href='#education'>Education</a></li>
                     <li onClick={() => setNavClick('experience')} className={class4}><a href='#experience'>Experience</a></li>
