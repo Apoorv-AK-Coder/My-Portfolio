@@ -10,7 +10,7 @@ export default function WorkData() {
                     <hr></hr>
                     <h3>Development Projects</h3>
                     <div className="d-flex gap">
-                        <iframe src='https://apoorv-ak-coder.github.io/Digital-Web/' />
+                        <iframe src='https://apoorv-ak-coder.github.io/Travel-World/' />
                         <iframe src='https://apoorv-ak-coder.github.io/ChatBot/' />
                     </div>
                     <div className="d-flex gap">

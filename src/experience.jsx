@@ -22,6 +22,21 @@ export default function Experience() {
                             </div>
                         </div>
                     </div>
+                    <div className='worksection'>
+                        <div className="flex">
+                            <i className="fa-solid fa-right-long"></i>
+                            <div>
+                                <h3>As Airspace Travels Private Limited</h3>
+                                <h3>Frontend Web Developer</h3>
+                                <h4>Aug-2020 to Current</h4>
+                                <ul>
+                                    <li><p><b>Project Development: </b>Collaborate on various web applications, contributing to the design & implementation of user-friendly UI.</p></li>
+                                    <li><p><b>Technologies Used: </b>Utilize HTML, CSS, and JavaScript, to build responsive and interactive features.</p></li>
+                                    <li><p><b>Code Quality: </b>Follow best practices in coding standards and perform code reviews to ensure maintainability and efficiency.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
