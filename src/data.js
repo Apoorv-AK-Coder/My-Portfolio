@@ -15,36 +15,36 @@ import image4 from './asset/4.png';
 
 export const SkillData = [
     {
-        image:HTML,
-        title:'HTML',
+        image: HTML,
+        title: 'HTML',
     },
     {
-        image:CSS,
-        title:'CSS',
+        image: CSS,
+        title: 'CSS',
     },
     {
-        image:Figma,
-        title:'Figma',
+        image: Figma,
+        title: 'Figma',
     },
     {
-        image:github,
-        title:'Github',
+        image: github,
+        title: 'Github',
     },
     {
-        image:JavaScript,
-        title:'JavaScript',
+        image: JavaScript,
+        title: 'JavaScript',
     },
     {
-        image:reactJS,
-        title:'React js',
+        image: reactJS,
+        title: 'React js',
     },
     {
-        image:TailwindCSS,
-        title:'Tailwind CSS',
+        image: TailwindCSS,
+        title: 'Tailwind CSS',
     },
     {
-        image:sass,
-        title:'SASS',
+        image: sass,
+        title: 'SASS',
     }
 ];
 
@@ -93,29 +93,29 @@ export const USPdata = [
     {
         image: image1,
         num: '1',
-    title: 'Level-headed',
-    description: 'Maintain a calm and rational approach to problem-solving, ensuring effective design solutions.'
-},
+        title: 'Level-headed',
+        description: 'Maintain a calm and rational approach to problem-solving, ensuring effective design solutions.'
+    },
 
-{
-    image: image2,
-    num: '2',
-    title: 'Persistent',
-    description: 'Dedicated to achieving exceptional design outcomes through rigorous iteration and refinement.'
-},
+    {
+        image: image2,
+        num: '2',
+        title: 'Persistent',
+        description: 'Dedicated to achieving exceptional design outcomes through rigorous iteration and refinement.'
+    },
 
-{
-    image: image3,
-    num: '3',
-    title: 'Amicable',
-    description: 'Build strong client relationships through open communication and collaboration.'
-},
+    {
+        image: image3,
+        num: '3',
+        title: 'Amicable',
+        description: 'Build strong client relationships through open communication and collaboration.'
+    },
 
-{
-    image: image4,
-    num: '4',
-    title: 'Adaptable',
-    description: 'Flexible and responsive to changing project requirements and client feedback.'
-}
+    {
+        image: image4,
+        num: '4',
+        title: 'Adaptable',
+        description: 'Flexible and responsive to changing project requirements and client feedback.'
+    }
 
 ];
