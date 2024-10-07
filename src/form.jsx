@@ -1,51 +1,60 @@
 import './style.css';
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React from 'react';
+// import emailjs from 'emailjs-com';
 
 export default function Form() {
-    const [formData, setFormData] = useState({
-        fullName: '',
-        phone: '',
-        email: '',
-        message: '',
-    });
+    const [result, setResult] = React.useState("");
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "743c6fb2-2a39-4136-88ad-86e4c1ad331f");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
         });
-    };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+        const data = await response.json();
 
-        emailjs.send('service_wkgfga4', 'template_4vhwepn', formData, '9inrOrQRC9PJsvir-')
-            .then((result) => {
-                console.log(result.text);
-                alert('Message sent successfully!');
-            }, (error) => {
-                console.log(error.text);
-                alert('Failed to send the message. Please try again.');
-            });
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <h3>Conatct Me</h3>
-            <p>Full Name*</p>
-            {/* <input type='text' placeholder='Write Here...' required /> */}
-            <input type='text' placeholder='Type Your Full Name Here...' name='fullName' value={formData.fullName} onChange={handleChange} required />
-            <p>Phone No.*</p>
-            <input type='tel' placeholder='Mobile Number Available on Whatsapp...' name='phone' value={formData.phone} onChange={handleChange} required />
-            <p>E-mail*</p>
-            <input type='email' placeholder='Enter Here...' name='email' value={formData.email} onChange={handleChange} required />
-            <p>Message*</p>
-            <textarea placeholder='Type Here...' name='message' value={formData.message} onChange={handleChange} required></textarea>
-            <br></br>
-            <button type='submit'>Submit</button>
-        </form>
+        <div>
+            <form onSubmit={onSubmit}>
+                <p>Fields marked with an * are required.</p>
+                <div className="d-flex gap1">
+                    <label htmlFor="fullname">
+                        Full Name*
+                        <input type='text' placeholder='Your Full Name' name='name' required id="fullname" />
+                    </label>
+                    <label htmlFor="phone">
+                        Phone No.*
+                        <input type='tel' placeholder='Phone Number' name='phone' required id="phone" />
+                    </label>
+                </div>
+                <label htmlFor="email">
+                    E-mail*
+                    <input type='email' placeholder='E-mail Id ex(example@example.com)' name='email' required id="email" />
+                </label>
+                <label htmlFor="message">
+                    Message*
+                    <textarea placeholder='Your Message Here...' name='message' required id="message" />
+                </label>
+                <br></br>
+                <button type='submit'>Submit</button>
+            </form>
+            <span>{result}</span>
+        </div>
     );
 
 }
