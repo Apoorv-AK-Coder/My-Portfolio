@@ -10,6 +10,7 @@ function Data({ image, title, description }) {
                 <img src={image} alt={title} />
                 <h4>{title}</h4>
             </div>
+            <hr />
             <p>{description}</p>
         </div>
     );
@@ -18,10 +19,8 @@ function Data({ image, title, description }) {
 export default function Usp() {
     return (
         <div className='usp'>
-            <div className="row">
-                <div className="column d-flex">
+            <div className="row grid grid1">
                     {USPdata.map((contentItem) => <Data {...contentItem} />)}
-                </div>
             </div>
         </div>
     );

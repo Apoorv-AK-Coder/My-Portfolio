@@ -1,6 +1,6 @@
 import './style.css';
-import logo from './asset/logo.png';
-import React, { useState } from 'react';
+import pdf from './asset/resume.pdf';
+import React, { useState, useEffect } from 'react';
 
 export default function Header() {
     const [navClick, setNavClick] = useState('home');
@@ -26,11 +26,33 @@ export default function Header() {
         class7 = 'column navigate';
     }
 
+    const [scrolling, setScrolling] = useState(false);
+
+  // Effect to detect scroll and change color
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);  // Change color when scrolled more than 50px
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    // Attach scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     return (
-        <header>
+        <header className={`header ${scrolling ? 'scrolled' : ''}`}>
             <div className="header flex">
                 <div className="column">
-                    <a href='./index'><img src={logo} alt='logo' /></a>
+                    <a href='./index'><p>Apoorv Agarwal</p></a>
+                    {/* <a href='./index'><img src={logo} alt='logo' /></a> */}
                 </div>
                 <div className={class7}>
                     <i onClick={() => setMobileNav('navShow')} className="fa-solid fa-grip-lines"></i>
@@ -47,7 +69,8 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="column btn">
-                    <button>Hire Me</button>
+                <a href={pdf} target='blank'><button>Download Resume <i className="fa-solid fa-download"></i></button></a>
+                    {/* <button>Hire Me</button> */}
                 </div>
             </div>
         </header>

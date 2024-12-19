@@ -14,18 +14,20 @@
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
+    "node": "^22.11.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-ga": "^3.3.1",
     "react-ga4": "^2.1.0",
     "react-router-dom": "^6.25.1",
     "react-scripts": "^5.0.1",
+    "react-type-animation": "^3.2.0",
     "script": "^0.1.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
     "gh-pages": "^6.1.1",
-    "vite": "^4.5.3"
+    "vite": "^4.5.5"
   },
   "keywords": [],
   "main": "vite.config.js",

@@ -1,5 +1,7 @@
 import './style.css';
 import React from 'react';
+import img1 from './asset/masters.png';
+import img2 from './asset/graduation.png';
 
 export default function Education() {
     return (
@@ -7,30 +9,35 @@ export default function Education() {
             <div className="row" id='education'>
                 <div className="column">
                     <h2>My Qualification</h2>
-                    <div className="d-flex media">
-                        <div className="column newcontent">
-                            <h3>MBA in Information Technology</h3>
-                            <h4><b>From Oct - 2020 to June - 2022</b></h4>
-                            <ul>
-                                <li>Results-oriented information technology professional with strong business acumen. MBA in Information Technology provides a strategic perspective and leadership skills.</li>
-                                <li>Exp. in Business analysis, improvement skills, management skills, etc...</li>
-                                <li>Proven ability to manage a team, work in a team, and maintain discipline.</li>
-                            </ul>
+                    <div className="innercol grid grid2">
+                        <div className="column d-flex gap">
+                            <div className="inner">
+                                <img src={img1} alt="" />
+                                    <h3>MBA in IT</h3>
+                                    <h4>From 2020 to 2022</h4>
+                            </div>
+
+                            <div className="inner1">
+                                <ul>
+                                    <li>Results-oriented IT professional with strong business acumen. MBA in IT provides a strategic perspective and leadership skills.</li>
+                                    <li>Proven ability to manage a team, work in a team, and maintain discipline.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="column manager">
-                        </div>
-                    </div>
-                    <div className="d-flex media">
-                    <div className="column coder">
-                    </div>
-                        <div className="column newcontent">
-                            <h3>B.TECH. in Computer Science & Engg.</h3>
-                            <h4><b>From July - 2016 to Aug - 2020</b></h4>
+                        <div className="column d-flex gap">
+                            <div className="inner">
+                                <img src={img2} alt="" />
+                                    <h3>B. Tech. in CSE</h3>
+                                    <h4>From 2016 to 2020</h4>
+                            </div>
+
+                            <div className="inner1">
                             <ul>
-                                <li>Technically proficient computer science graduate with a strong foundation in programming languages, data structures, and algorithms.</li>
+                                <li>Technically proficient CS graduate with a strong foundation in programming languages, data structures, and algorithms.</li>
                                 <li> Experienced in HTML, CSS, JS, React JS, etc...</li>
                                 <li>Demonstrated ability to design a user-friendly website with responsiveness for multiple devices.</li>
                             </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

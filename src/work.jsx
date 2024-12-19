@@ -31,7 +31,7 @@ export default function WorkData() {
                             </a>
                             <div className="details1">
                                 <h3>Simple Stitch Wear</h3>
-                                <p>Created an online shopping website using HTML, CSS, and SCSS to enhance user engagement and streamline the shopping experience.</p>
+                                <p>Created an online shopping website using HTML, CSS, & SCSS to enhance user engagement and streamline the shopping experience.</p>
                             </div>
                         </div>
 
@@ -50,7 +50,7 @@ export default function WorkData() {
                         <div className="column">
                             <div className="details">
                                 <h3>Chatboat</h3>
-                                <p>Built a chatbot using HTML, CSS, and JavaScript, enabling interactive and dynamic conversations for enhanced user engagement.</p>
+                                <p>Built a chatbot using HTML, CSS, and JS, enabling interactive & dynamic conversations for enhanced user engagement.</p>
                             </div>
                             <a href="https://apoorv-ak-coder.github.io/ChatBot/" target="_blank">
                                 <img src={p4} alt="" className="img" />
