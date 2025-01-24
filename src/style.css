@@ -803,3 +803,7 @@ section {
         }
     }
 }
+
+.visitorcontent {
+    display: none;
+}
